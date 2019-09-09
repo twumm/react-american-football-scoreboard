@@ -9,6 +9,10 @@ function App() {
   const [homeScore, setHomeScore] = useState(0);
   const [awayScore, setAwayScore] = useState(0);
 
+  const homeScoreIncrement = (scoreType) => {
+    scoreType === 'touchdown' ? setHomeScore(homeScore + 7) : setHomeScore(homeScore + 3);
+  }
+
   return (
     <div className="container">
       <section className="scoreboard">
