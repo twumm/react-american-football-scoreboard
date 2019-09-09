@@ -45,11 +45,13 @@ function App() {
           {/* TODO STEP 4 - Now we need to attach our state setter functions to click listeners. */}
           <button
             className="homeButtons__touchdown"
+            onClick={() => homeScoreIncrement('touchdown')}
           >
             Home Touchdown
           </button>
           <button
             className="homeButtons__fieldGoal"
+            onClick={() => homeScoreIncrement('fieldgoal')}
           >
             Home Field Goal
           </button>
