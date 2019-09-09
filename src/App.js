@@ -15,6 +15,12 @@ function App() {
       : setHomeScore(homeScore + 3);
   }
 
+  const awayScoreIncrement = (scoreType) => {
+    scoreType === 'touchdown'
+      ? setAwayScore(awayScore + 7)
+      : setAwayScore(awayScore + 3);
+  }
+
   return (
     <div className="container">
       <section className="scoreboard">
