@@ -59,11 +59,13 @@ function App() {
         <div className="awayButtons">
           <button
             className="awayButtons__touchdown"
+            onClick={() => awayScoreIncrement('touchdown')}
           >
             Away Touchdown
           </button>
           <button
             className="awayButtons__fieldGoal"
+            onClick={() => awayScoreIncrement('fieldgoal')}
           >
             Away Field Goal
           </button>
